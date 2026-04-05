@@ -1,12 +1,35 @@
-# Projeto de Variaveis Instrumentais
+# IV_eolicas
 
-Base inicial do projeto com insumos para analise de potencial eolico.
+Projeto para analise econometrica com foco em variaveis instrumentais, com organizacao voltada a reproducibilidade.
 
-## Input disponivel
+## Estrutura
 
-- `input/atlas_eolico_velocidade_media_anual_nordeste.zip`: arquivo baixado do CRESESB com a camada de velocidade media anual dos ventos para a regiao Nordeste.
+- `data/raw/external/`: dados brutos obtidos de fontes externas e publicas.
+- `data/raw/local/`: dados brutos locais do projeto. Conteudos sensiveis ou volumosos devem permanecer fora do versionamento.
+- `data/intermediate/`: bases temporarias geradas durante limpeza e integracao.
+- `data/processed/`: bases finais prontas para estimacao.
+- `src/`: scripts de ingestao, limpeza, construcao de variaveis e estimacao.
+- `notebooks/`: exploracoes e validacoes pontuais.
+- `results/tables/`: tabelas finais.
+- `results/figures/`: graficos e mapas finais.
+- `docs/`: documentacao metodologica e operacional.
 
-## Fonte
+## Dados incluidos
 
-- CRESESB/CEPEL: Atlas do Potencial Eolico Brasileiro.
-- Pagina de referencia: https://cresesb.cepel.br/index.php?section=publicacoes&task=livro&cid=1
+- `data/raw/external/wind_atlas_northeast/wind_speed_atlas_northeast.kml`
+  Fonte publica do CRESESB/CEPEL com a velocidade media anual dos ventos para a regiao Nordeste.
+
+## Convencoes recomendadas
+
+- preservar dados brutos sem alteracao;
+- gerar toda transformacao por script dentro de `src/`;
+- salvar bases intermediarias e finais com nomes descritivos e datas apenas quando necessario;
+- documentar fontes, unidades e chaves de merge em `docs/data_sources.md`;
+- nao versionar contratos, arquivos temporarios, caches, zips redundantes ou resultados descartaveis.
+
+## Proximo fluxo de trabalho
+
+1. colocar os scripts de ingestao em `src/`;
+2. transformar o KML e demais bases brutas em arquivos tabulares ou espaciais padronizados;
+3. salvar a base analitica em `data/processed/`;
+4. estimar os modelos e exportar tabelas e figuras para `results/`.

@@ -1,2 +1,34 @@
 desktop.ini
 Thumbs.db
+
+# Operating system and editor noise
+.DS_Store
+*.tmp
+*.log
+*.bak
+*.swp
+
+# Project outputs
+results/**/*.csv
+results/**/*.xlsx
+results/**/*.tex
+results/**/*.html
+results/**/*.png
+results/**/*.jpg
+results/**/*.pdf
+
+# Local and sensitive materials
+docs/private/**
+!docs/private/.gitkeep
+data/raw/local/**
+!data/raw/local/.gitkeep
+
+# Temporary or redundant compressed files
+*.zip
+*.7z
+*.rar
+
+# GIS and analysis caches
+*.qgz~
+*.aux.xml
+*.lock
