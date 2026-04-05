@@ -18,6 +18,8 @@ Projeto para analise econometrica com foco em variaveis instrumentais, com organ
 
 - `data/raw/external/wind_atlas_northeast/wind_speed_atlas_northeast.kml`
   Fonte publica do CRESESB/CEPEL com a velocidade media anual dos ventos para a regiao Nordeste.
+- `data/raw/external/aneel_operacao_comercial_geracao/aneel_operacao_comercial_geracao_detalhado.csv`
+  Base publica da ANEEL com unidades geradoras liberadas para operacao comercial, incluindo tipo de geracao, combustivel, usina, UF e potencia liberada.
 
 ## Convencoes recomendadas
 
