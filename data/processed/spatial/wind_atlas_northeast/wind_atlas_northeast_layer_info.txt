@@ -1,0 +1,27 @@
+﻿INFO: Open of `C:\Users\Lucas\OneDrive\NEGÓCIOS\CLIENTES\2026 - COALIZÃO CE\data\processed\spatial\wind_atlas_northeast\wind_atlas_northeast.shp'
+      using driver `ESRI Shapefile' successful.
+
+Layer name: wind_atlas_northeast
+Metadata:
+  DBF_DATE_LAST_UPDATE=2026-04-05
+Geometry: 3D Polygon
+Feature Count: 14
+Extent: (-48.754500, -18.328100) - (-34.787500, -1.047450)
+Layer SRS WKT:
+GEOGCRS["WGS 84",
+    DATUM["World Geodetic System 1984",
+        ELLIPSOID["WGS 84",6378137,298.257223563,
+            LENGTHUNIT["metre",1]]],
+    PRIMEM["Greenwich",0,
+        ANGLEUNIT["degree",0.0174532925199433]],
+    CS[ellipsoidal,2],
+        AXIS["latitude",north,
+            ORDER[1],
+            ANGLEUNIT["degree",0.0174532925199433]],
+        AXIS["longitude",east,
+            ORDER[2],
+            ANGLEUNIT["degree",0.0174532925199433]],
+    ID["EPSG",4326]]
+Data axis to CRS axis mapping: 2,1
+Name: String (80.0)
+descriptio: String (80.0)

@@ -35,3 +35,18 @@ Projeto para analise econometrica com foco em variaveis instrumentais, com organ
 2. transformar o KML e demais bases brutas em arquivos tabulares ou espaciais padronizados;
 3. salvar a base analitica em `data/processed/`;
 4. estimar os modelos e exportar tabelas e figuras para `results/`.
+
+## Pipeline espacial inicial
+
+Para reproduzir a limpeza da ANEEL e a conversao do atlas de ventos em shapefile:
+
+`powershell -ExecutionPolicy Bypass -File .\src\00_run_spatial_prep_pipeline.ps1`
+
+Principais saidas:
+
+- `data/intermediate/aneel_operacao_comercial_geracao/aneel_generation_operation_clean.csv`
+- `data/processed/aneel_operacao_comercial_geracao/aneel_eolic_northeast_unit_level.csv`
+- `data/processed/aneel_operacao_comercial_geracao/aneel_eolic_northeast_state_year_summary.csv`
+- `data/processed/aneel_operacao_comercial_geracao/aneel_eolic_northeast_state_summary.csv`
+- `data/processed/spatial/wind_atlas_northeast/wind_atlas_northeast.shp`
+- `data/processed/spatial/wind_atlas_northeast/wind_atlas_northeast.geojson`

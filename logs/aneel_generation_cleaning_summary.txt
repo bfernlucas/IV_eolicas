@@ -1,0 +1,11 @@
+﻿Generated at: 2026-04-05 04:00:46
+Source file: C:\Users\Lucas\OneDrive\NEGÓCIOS\CLIENTES\2026 - COALIZÃO CE\data\raw\external\aneel_operacao_comercial_geracao\aneel_operacao_comercial_geracao_detalhado.csv
+Clean rows: 55065
+Eolic rows in Northeast: 5377
+Northeast states in summary: 8
+Output clean file: C:\Users\Lucas\OneDrive\NEGÓCIOS\CLIENTES\2026 - COALIZÃO CE\data\intermediate\aneel_operacao_comercial_geracao\aneel_generation_operation_clean.csv
+Output unit file: C:\Users\Lucas\OneDrive\NEGÓCIOS\CLIENTES\2026 - COALIZÃO CE\data\processed\aneel_operacao_comercial_geracao\aneel_eolic_northeast_unit_level.csv
+Output state-year summary file: C:\Users\Lucas\OneDrive\NEGÓCIOS\CLIENTES\2026 - COALIZÃO CE\data\processed\aneel_operacao_comercial_geracao\aneel_eolic_northeast_state_year_summary.csv
+Output state summary file: C:\Users\Lucas\OneDrive\NEGÓCIOS\CLIENTES\2026 - COALIZÃO CE\data\processed\aneel_operacao_comercial_geracao\aneel_eolic_northeast_state_summary.csv
+Note: the ANEEL resource used here does not include plant coordinates.
+A direct spatial join with wind polygons requires an additional geocoded or plant-location source.
